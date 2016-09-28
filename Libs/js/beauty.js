@@ -4,7 +4,12 @@ $(function(){
 	});
 
 	$(window).scroll(function(){
-		
+		var topHeight=$(window).scrollTop();
+		if(topHeight<=200){
+			$('.float_content').css({
+				marginTop:420-topHeight,
+			});
+		}
 	})
 
 	var swiper = new Swiper('.swiper-container', {
