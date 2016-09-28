@@ -1,0 +1,227 @@
+#women_neil_container{
+	width: 1010px;
+	margin: 0 auto;
+	font-size: 12px;
+}
+#women_neil_container a:hover{
+	color: red;
+}
+/*--------内容开始---------*/
+.women_neil_top{
+	width: 950px;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+.womwn_neil_nav{
+	width: 500px;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ccc;
+	float: left;
+}
+.time_left{
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	float: right;
+	display: inline-block;
+}
+
+.neil_title{
+	width: 950px;
+	height: 60px;
+	line-height: 60px;
+}
+.neil_title_left{
+	width: 500px;
+	float: left;
+}
+.neil_title_left span{
+	margin-right: 10px;
+}
+.neil_title_right{
+	width: 80px;
+	float: right;
+}
+/*----------brandStory---------*/
+.brand_story{
+	width: 948px;
+	height: 160px;
+	border: 1px solid #ccc;
+	box-shadow: 7px 8px 12px 0px #ccc;
+}
+.brand_story_top{
+	width: 920px;
+	float: left;
+	margin-left: 10px;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+.brand_story_bottom{
+	font-size: 12px;
+	padding: 0px 10px;
+}
+
+/*---------kinds-----------*/
+
+.kinds{
+	width: 948px;
+	height: 80px;
+	border: 1px solid #ccc;
+	margin-top: 15px;
+}
+.kinds div{
+	width: 50px;
+	display: inline-block;
+	margin: 12px;
+	float: left;
+}
+.kinds ul{
+	width: 800px;
+	height: 60px;
+	float: left;
+	padding: 10px;
+	margin-right: 40px;
+}
+.kinds ul li{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	margin-right: 60px;
+}
+
+/*----------上面的换页行---------*/
+.page_turn_top{
+	width: 950px;
+	height: 50px;
+	box-shadow: 0px 2px 6px 1px #ccc;
+	background: white;
+}
+.page_turn_top div{
+	display: inline-block;
+}
+.default_sort{
+	width: 100px;
+	height: 30px;
+	background:rgb(231,231,231);
+	text-align: center;
+	line-height: 30px;
+	margin:10px;
+}
+.price_sort{
+	width: 68px;
+	height: 28px;
+	padding-left: 30px;
+	line-height: 28px;
+	border: 1px solid #ccc;
+}
+.page_turn_top_right{
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 10px;
+}
+.pageBtn span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+	cursor: pointer;
+}
+/*---------商品列表-------------*/
+.goods_list{
+	width: 948px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.goods_list_box{
+	width: 220px;
+	height: 360px;
+	float: left;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 12px;
+}
+.goods_list_box h5{
+	font-weight: normal;
+	margin-left: 10px;
+	font-size: 12px;
+}
+.goods_list_box div{
+	color: black;
+}
+.goods_list_box span{
+	color: red;
+}
+.goods_list_box img{
+	width: 220px;
+	height: 270px;
+}
+
+/*下面的翻页*/
+.page_turn_bottom{
+	margin: 20px 10px;
+}
+.page_turn_bottom_container{
+	width: 400px;
+	margin: 0 auto;
+	height: 25px;
+	line-height: 25px;
+	/*border: 1px solid #ccc;*/
+}
+.pageBtn_left_again,
+.pageBtn_right_again{
+	display: inline-block;
+	width: 58px;
+	height: 23px;
+	line-height: 25px;
+	border: 1px solid #ccc;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	margin-left: 5px;
+}
+.pageBtn_right_again{
+	margin-right: 5px;
+}
+.page_turn_bottom_container ul{
+	height: 25px;
+	float: left;
+}
+.page_turn_bottom_container ul li{
+	width: 23px;
+	height: 23px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 23px;
+	float: left;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.page_turn_bottom_container ul li:hover{
+	border: 1px solid #000;
+}
+.jumpPage{
+	width: 40px;
+	height: 15px;
+	text-align: center;
+	color: #ccc;
+}
+.confirm_turn{
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	color: white;
+	background: #000;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}

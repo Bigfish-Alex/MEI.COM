@@ -1,0 +1,64 @@
+h2{
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.about_to_begin{
+	width: 1040px;
+	position: relative;
+	margin: 0 auto;
+}
+.about_to_begin ul{
+	width: 100%;
+}
+.about_to_begin ul li{
+	float: left;
+	width: 77px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	cursor: pointer;
+	border-left: 1px solid #000;
+}
+.about_to_begin ul li:last-child{
+	border-right: 1px solid #000;
+}
+.about_to_begin_activity img{
+	/*float: left;*/
+	margin-right: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+.about_to_begin_activity_box{
+	position: relative;
+	float: left;
+}
+.about_to_begin_activity_box_mask{
+	width: 322px;
+	height: 90px;
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	display: none;
+}
+.about_to_begin_activity_box_mask span{
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	background: red;
+	color: white;
+	margin-top: 30px;
+}
+.about_to_begin_activity_box:hover .about_to_begin_activity_box_mask{
+	display: block;
+}
+.about_to_begin_activity_box_mask span a{
+	color: white;
+}
+.about_to_begin_activity_box_mask span a:hover{
+	color: white;
+	text-decoration: underline;
+}

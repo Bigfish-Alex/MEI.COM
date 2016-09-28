@@ -1,0 +1,298 @@
+#container{
+	width: 100%;
+	min-width: 760px;
+	position: relative;
+}
+#container a:hover{
+	color: red;
+}
+/*----------------头部header样式------------------------*/
+#header_container{
+	width: 100%;
+	height: 160px;
+	position: relative;
+}
+#header_container .myCountInfo{
+	display: inline-block;
+}
+#header_container .login_state{
+	display: inline-block;
+}
+#header_container .scan_dl_app{
+	position: absolute;
+	top: 30px;
+	right: 245px;
+	display: none;
+	z-index: 10000;
+}
+/*登录状态显示我的账户的菜单css begin*/
+#header_container .my_count_menu{
+	position: absolute;
+	width: 225px;
+	height: 150px;
+	top: 30px;
+	left: 110px;
+	z-index: 10000;
+	box-shadow: 0px 1px 2px 0px #000;
+	display: none;
+}
+#header_container .my_count_menu div{
+	width: 74px;
+	height: 74px;
+	float: left;
+	text-align: center;
+	line-height: 70px;
+	background: #fff;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+/*登录状态显示我的账户的菜单css over*/
+#header_container .header_top{
+	width: 100%;
+	height: 30px;
+	background: #f2f2f2;
+}
+#header_container .header_top a{
+	font-size: 12px;
+}
+#header_container .header_top .welcome_register{
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 135px;
+	float: left;
+}
+#header_container .header_top .welcome_register .red a{
+	color: red;
+}
+#header_container .header_top .welcome_register img{
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+#header_container .header_top .loginBtn,
+#header_container .header_top .collectBtn{
+	padding: 0 15px;
+}
+#header_container .header_top .phoneV{
+	padding: 0 15px;
+}
+#header_container .header_top .consult{
+	margin-right: 15px;
+}
+#header_container .header_top .weibo img{
+	vertical-align: middle;
+	margin-left: 15px;
+}
+#header_container .header_top .consult_online{
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 135px;
+	float: right;
+	margin-right: 120px;
+}
+#header_container .header_middle{
+	width: 100%;
+	height: 90px;
+}
+#header_container .header_middle h1{
+	margin-left: 135px;
+	display: inline-block;
+}
+#header_container .header_middle .slogan img{
+	position: relative;
+	top: -20px;
+}
+/*-------------头部菜单导航--------------------*/
+#header_container .header_menu{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background: #000;
+	color: white;
+	z-index: 1000;
+}
+#header_container .header_menu a{
+	color: white;
+}
+#header_container .header_menu ul{
+	width: 740px;
+	height: 40px;
+	padding-left: 135px;
+	float: left;
+}
+#header_container .header_menu ul li{
+	float: left;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+}
+#header_container .header_menu ul li:last-child{
+	margin-left: 30px;
+}
+#header_container a:hover{
+	color: red;
+}
+/*----购物袋---*/
+#header_container .header_menu .shopping_bag{
+	width: 120px;
+	height: 40px;
+	margin-right: 220px;
+	float: right;
+	line-height: 40px;
+	background: url(../../Libs/images/bag.png) 0px 7px no-repeat;
+}
+.buyed_goods{
+	width: 200px;
+	height: 70px;
+	border-bottom: 1px solid #ccc;
+	margin: 0 auto;
+	font-size: 12px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.buyed_goods img{
+	width: 51px;
+	height: 60px;
+	float: left;
+	border: 1px solid #ccc;
+	margin-right: 5px;
+	
+}
+.buyed_goods h4{
+	font-size: 12px;
+	font-weight: normal;
+}
+.singlePrice{
+	font-size: 12px;
+}
+.delete{
+	font-size: 12px;
+	display: inline-block;
+	float: right;
+	margin-right: 3px;
+}
+.buy_bum{
+	font-size: 12px;
+}
+/*#header_container .header_menu .shopping_bag img{
+	vertical-align: middle;
+}*/
+
+/*-----菜单下滑列表样式-----*/
+.menu_women,
+.menu_men,
+.menu_beauty,
+.menu_house,
+.menu_child{
+	width:560px;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 160px;
+	display: none;
+	background: white;
+	z-index: 999;
+	/*box-shadow: 1px 1px 1px black;*/
+}
+.menu_Layette{
+	width:240px;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 160px;
+	padding: 20px;
+	display: none;
+	background: white;
+	z-index: 999;
+}
+.menu_Layette ul{
+	margin-top: 10px;
+}
+.menu_Layette h4{
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+/*下拉购物车*/
+.shoppingcar{
+	width: 260px;
+	height: 60px;
+	background: white;
+	color: #000000;
+	text-align: center;
+	border:1px solid #ccc;
+	padding-top: 10px;
+	position: absolute;
+	top: 40px;
+	right: 12%;
+	display: none;
+	z-index: 1001;
+}
+#settle_accounts{
+	display: inline-block;
+	width: 90px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	background: red;
+	color: white;
+	position: absolute;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.menu_list_left{
+	width: 280px;
+	float: left;
+	padding: 20px;
+}
+.menu_list_left a{
+	font-size: 12px;
+}
+.menu_list_left hr{
+	width: 200px;
+	opacity: 0.3;
+}
+.menu_list_left .hot_activity{
+	margin-top: 5px;
+	border-right: 1px solid #ccc;
+	height: 260px;
+}
+.menu_list_left .hot_activity h3{
+	margin-bottom: 10px;
+}
+.menu_list_left .hot_activity ul{
+	margin-top: 10px;
+}
+.menu_list_left .hot_activity ul li,
+.menu_list_left .goods_classify ul li,
+.menu_Layette ul li{
+	margin-top: 5px;
+}
+.menu_list_left .hot_activity ul li a,
+.menu_list_left .goods_classify ul li a,
+.menu_Layette ul li a{
+	color: #666666;
+}
+.menu_list_left .hot_activity h4{
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+.menu_list_left .goods_classify h3{
+	margin-top: 10px;
+}
+.menu_list_left .goods_classify hr{
+	margin-top: 10px;
+}
+.menu_list_left .goods_classify ul{
+	margin-top: 10px;
+}
+.menu_list_left .goods_classify{
+	border-right: 1px solid #ccc;
+}
+
+.menu_list_right{
+	width: 230px;
+	float:right;
+}

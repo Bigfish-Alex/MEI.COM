@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="Libs/style/common_style.css">
+	<link rel="stylesheet" type="text/css" href="Libs/style/login_style.css">
+	<script type="text/javascript" src="Libs/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="Libs/js/login.js"></script>
+	<script type="text/javascript" src="Libs/jquery-validation-1.15.0/dist/jquery.metadata.js"></script>
+	<script type="text/javascript" src="Libs/jquery-validation-1.15.0/dist/jquery.validate.extend.methods.js"></script>
+	<script type="text/javascript" src="Libs/jquery-validation-1.15.0/dist/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="Libs/jquery-validation-1.15.0/dist/localization/messages_zh.min.js"></script>
+	<script type="text/javascript" src="Libs/jquery-cookie/jquery.cookie.js"></script>
+	<title>朱志成-魅力惠-登录页面</title>
+</head>
+<body>
+	<div id="register_container">
+		<div class="register_top">
+			<a href="index.html"><div class="logo"></div></a>
+			<div class="slogan"></div>
+		</div>
+		<div class="register_middle">
+			<div class="register_middle_box">
+				<div class="register_form_warp">
+					<form action="#" method="post">
+						<table> 
+							<tr>
+								<td></td>
+								<td>
+									<h3>会员登录</h3>
+									<span class="registered">没有账号？</span>
+									<a href="register.html"><span class="red">免费注册</span></a>
+								</td>
+							</tr>
+							<tr>
+								<td>账户名:</td>
+								<td>
+									<input type="text" name="username" id="username" placeholder="请输入账号名" class="isPhoneOrEmail">
+								</td>
+							</tr>
+							<tr>
+								<td>密码:</td>
+								<td>
+									<input type="password" name="password" id="password" placeholder="请输入密码" class="stringCheck">
+								</td>
+							</tr>
+							<tr>
+								<td>验证码:</td>
+								<td>
+									<input type="text" name="code" id="code">
+									<input type="button" id="codeNum" value="fre4"></input>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><span id="submitBtn">会员登录</span></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="checkbox">
+									<span id="auto_login">下次自动登录</span>
+									<span id="forget_password">忘记密码</span>
+								</td>
+							</tr>
+							<tr>
+								<td>联名登录:</td>
+								<td><img src="Libs/images/wechat_weibo.png" alt=""></td>
+							</tr>
+						</table>
+					</form>
+					<div class="down_app">
+						<img src="Libs/images/down_app1.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="register_bottom">
+			
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>

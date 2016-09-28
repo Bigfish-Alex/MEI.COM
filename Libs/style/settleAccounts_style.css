@@ -1,0 +1,142 @@
+#settleAccounts_container{
+	width: 1020px;
+	margin: 0 auto;
+}
+.title{
+	width: 940px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #000;
+}
+.title h3{
+	display: inline-block;
+	font-size: 22px;
+	font-weight: normal;
+}
+.title span{
+	display: inline-block;
+	float: right;
+	font-size: 12px;
+}
+.settleAccounts_menu{
+	width: 940px;
+	margin-top: 20px;
+}
+.settleAccounts_menu ul{
+	width: 940px;
+	height: 30px;
+	border-bottom: 2px solid #000;
+}
+.settleAccounts_menu ul li{
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+	font-size: 18px;
+}
+.settleAccounts_menu ul li:first-child{
+	background: #000;
+	color: #fff;
+}
+
+.table_count{
+	width: 940px;
+}
+.table_count table{
+	width: 100%;
+	margin-top: 20px;
+	/*border:1px solid #ccc;*/
+}
+.table_count table .table_header td{
+	border-bottom: 2px solid #000;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+}
+.table_count table td:nth-child(1){
+	width:40%;
+}
+.table_count table td:nth-child(2),
+.table_count table td:nth-child(3),
+.table_count table td:nth-child(4),
+.table_count table td:nth-child(5),
+.table_count table td:nth-child(6){
+	width:12%;
+	/*border: 1px solid #ccc;*/
+	text-align: center;
+}
+.table_count table tr:nth-child(1) td{
+	height: 30px;
+}
+.table_count table tr td{
+	height: 104px;
+	padding-top: 8px;
+	padding-bottom: 8px
+}
+.brand_name{
+	margin-top: 20px;
+}
+.table_count table tr td img{
+	width: 80px;
+	height: 104px;
+	display: inline-block;
+	float: left;
+}
+/*.table_count table tr:nth-child(2) td:nth-child(3){
+	color: red;
+}*/
+.buy_num{
+	width: 30px;
+	text-align: center;
+	height: 27px;
+	line-height: 27px;
+	border: none;
+}
+.num_minus,
+.num_add{
+	width: 20px;
+	height: 27px;
+	line-height: 27px;
+	display: inline-block;
+}
+
+.final_count{
+	width: 940px;
+	height: 100px;
+	margin-top: 20px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 30px;
+}
+.final_count_box{
+	float: right;
+	width: 600px;
+	height: 100px;
+	text-align: right;
+	/*border: 1px solid #ccc;*/
+}
+.final_price{
+	color: red;
+	font-size: 20px;
+}
+.continue_shopping,
+.check_now{
+	width: 225px;
+	height: 35px;
+	display: inline-block;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+.continue_shopping{
+	background: #fff;
+	border: 1px solid #000;
+}
+.check_now{
+	background: red;
+	color: #fff;
+	border: 1px solid red;
+	margin-left: 20px;
+}
+

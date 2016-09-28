@@ -1,0 +1,142 @@
+/*-----------登录顶部logo部分BEGIN-------------*/
+.register_top{
+	width: 100%;
+	height: 65px;
+	background: rgb(240,240,240);
+}
+.register_top .logo{
+	width: 190px;
+	height: 36px;
+	float: left;
+	margin-left: 450px;
+	margin-top: 27px;
+	background: url(../images/base_z.png) -850px -325px no-repeat;
+}
+.register_top .slogan{
+	width: 140px;
+	height: 14px;
+	margin-top: 51px;
+	margin-left: 10px;
+	float: left;
+	background: url(../images/base_z.png) -900px -125px no-repeat;
+}
+/*-----------登录顶部logo部分over-------------*/
+
+/*-----------登录主要中间部分BEGIN-------------*/
+.register_middle{
+	width: 100%;
+	height: 650px;
+	background: url(../images/register_background.png) 0px -50px;
+}
+.register_middle .register_middle_box{
+	width: 960px;
+	height: 650px;
+	margin-left: 120px;
+	background: url(../images/login.png) 0px -50px;
+}
+.register_middle .register_form_warp{
+	width: 370px;
+	height: 648px;
+	float: right;
+	margin-right: 140px;
+	/*border: 1px solid #000;*/
+}
+.register_form_warp table{
+	/*border: 1px dashed #ccc;*/
+}
+.register_form_warp h3{
+	display: inline-block;
+}
+.register_form_warp table td:first-child{
+	vertical-align: top;
+	line-height: 30px;
+	width: 80px;
+	text-align: right;
+	font-size: 12px;
+}
+.register_form_warp table td:last-child{
+	padding-left: 10px;
+}
+.register_form_warp form{
+	margin-top: 40px;
+}
+.register_form_warp table tr{
+	height: 30px;
+}
+.register_form_warp table tr:nth-child(1) .registered{
+	font-size: 10px;
+	height: 30px;
+	line-height: 30px;
+}
+.register_form_warp table tr:nth-child(1) span:last-child{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.register_form_warp table tr:nth-child(1) h3{
+	font-size: 16px;
+	margin-right: 70px;
+}
+.register_form_warp input{
+	width: 260px;
+	height: 30px;
+}
+.register_form_warp table td{
+	padding-top: 7px;
+}
+.register_form_warp table span{
+	cursor: pointer;
+}
+#code{
+	width:120px;
+	height: 26px
+}
+#codeNum{
+	width:120px;
+	float: right;
+	margin-right: 0px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+#submitBtn{
+	display: inline-block;
+	width:260px;
+	height: 30px;
+	color: white;
+	background: red;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 5px;
+}
+.register_form_warp input[type=checkbox]{
+	width: 15px;
+	height: 15px;
+}
+.down_app{
+	width: 360px;
+	border-top: 1px solid #000;
+	margin-top: 10px;
+}
+.down_app img{
+	margin-top: 20px;
+	margin-left: 90px;
+}
+
+
+/*-------------label-----------------*/
+table label{
+	color: red;
+	font-size: 12px;
+}
+.register_form_warp table tr:nth-child(4) td{
+	position: relative;
+	padding-top: 10px;
+}
+.register_form_warp table tr:nth-child(5) td{
+	padding-top: 15px;
+}
+.register_form_warp table tr:nth-child(4) label{
+	position:absolute;
+	top: 42px;
+	left: 10px;
+}

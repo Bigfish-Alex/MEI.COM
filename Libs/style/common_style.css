@@ -1,0 +1,40 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+ul{
+	list-style-type: none;
+}
+.clearHeight10{
+	overflow: hidden;
+	clear: both;
+	height: 10px;
+	width: 100%
+}
+.clearHeight1{
+	overflow: hidden;
+	height: 1px;
+	width: 100%
+}
+.red{
+	color: red;
+}
+.black{
+	color: black;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+.gray{
+	color: gray;
+}
+.font12{
+	font-size: 12px;
+}
+.font20{
+	font-size: 20px;
+}

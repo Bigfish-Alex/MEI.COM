@@ -1,0 +1,38 @@
+.men_content{
+	padding:10px 0px;
+	width: 1040px;
+	margin: 0 auto;
+}
+.mask_style{
+	width: 320px;
+	height: 230px;
+	background: #f2f2f2;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	margin-bottom: 15px;
+}
+.mask_style_img{
+	width: 320px;
+	height: 195px;
+	overflow: hidden;
+	position: relative;
+}
+.mask_style_img img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.mask_style_mask{
+	background-color:rgba(0,0,0,0.5);
+	width: 320px;
+	height: 115px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: white;
+	padding-top: 80px;
+	text-align: center;
+	display: none;
+	z-index: 3;
+}

@@ -1,0 +1,261 @@
+#container_index{
+	width: 100%;
+	position: relative;
+	min-width: 1000px;
+}
+#banner_container{
+	width: 100%;
+	height: 450px;
+	background: url(../images/banner.jpg) -200px 0px no-repeat;
+}
+#banner_container a{
+	display: block;
+	width: 100%;
+	height: 450px;
+}
+#container_index #float_content {
+	width: 1035px;
+	background: white;
+	position: absolute;
+	top: 540px;
+	left: 8%;
+	box-shadow: 0px 0px 15px -1px #000;
+	padding-left: 20px;
+	padding-top:20px;
+}
+/*-------侧栏回到顶部-------*/
+.scan_wechat{
+	position: fixed;
+	right: 5px;
+	z-index: 2000;
+	bottom: 100px;
+}
+.back_to_top{
+	position: fixed;
+	z-index: 2000;
+	right: 5px;
+	bottom: 76px;
+	display: none;
+}
+/*----------今日上新 BEGIN-----------*/
+#float_content .mask_style{
+	width: 320px;
+	height: 230px;
+	background: #f2f2f2;
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	margin-bottom: 15px;
+}
+.today_new_left{
+	float: left;
+	width: 680px;
+}
+.today_new_right{
+	float: left;
+	margin-right: 15px;
+	margin-top: 39px;
+}
+#float_content  h2{
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+#float_content  .mask_style_img{
+	width: 320px;
+	height: 195px;
+	overflow: hidden;
+	position: relative;
+}
+#float_content  .mask_style_img img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#float_content  .mask_style_mask{
+	background-color:rgba(0,0,0,0.5);
+	width: 320px;
+	height: 115px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: white;
+	padding-top: 80px;
+	text-align: center;
+	display: none;
+	z-index: 3;
+}
+#float_content  h4{
+	width: 320px;
+	height: 35px;
+	line-height: 35px;
+	font-weight: normal;
+	text-indent: 1em;
+}
+#float_content  .red{
+	float: right;
+	margin-right: 20px;
+}
+#float_content  h4 .big{
+	font-size: 20px;
+}
+.today_new_right .today_new_big{
+	width: 320px;
+	height: 492px;
+}
+.today_new_right .today_new_big img{
+	width: 320px;
+}
+.today_new_big_bottom .new_product_a{
+	margin-top: 0px;
+	width: 320px;
+}
+/*----------今日上新 OVER-----------*/
+
+
+/*------------女士活动样式 begin-----------------*/
+.activity_topLeftRight{
+	width: 100%;
+}
+.activity_top{
+	width: 100%;
+	height: 484px;
+}
+.activity_top_left{
+	float: left;
+	width: 320px;
+	height: 475px;
+	background: url(../images/home_silo_banner.jpg);
+}
+.activity_top_left_content{
+	width: 210px;
+	height: 220px;
+	margin: 260px auto;
+	text-align: center;
+	color: white;
+}
+.activity_top_left_content .chineses{
+	font-size: 30px;
+}
+.activity_top_left_content .english{
+	font-size: 35px;
+}
+.activity_top_left_content a{
+	color: white;
+	font-size: 12px;
+}
+.activity_top_left_content a:hover{
+	color: red;
+}
+.activity_top_left_content .warp_content{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 15px;
+}
+.activity_top_right{
+	float: left;
+	width: 680px;
+	margin-left: 20px;
+}
+.activity_bottom{
+	width: 100%;
+}
+.look_more{
+	float: right;
+	margin-right: 50px;
+}
+/*------------女士活动样式 over-----------------*/
+
+/*------------男士活动样式 -----------------*/
+.activity_top_left_men{
+	background: url(../images/home_silo_banner.jpg) -320px 0px no-repeat;
+}
+.activity_top_left_men a{
+	color: black;
+}
+
+/*------------美妆活动样式 -----------------*/
+.activity_top_left_markup{
+	background: url(../images/home_silo_banner.jpg) -640px 0px no-repeat;
+
+}
+.activity_top_left_markup a{
+	color: black;
+}
+
+/*------------家居活动样式 -----------------*/
+.activity_top_left_house{
+	background: url(../images/home_silo_banner.jpg) -960px 0px no-repeat;
+
+}
+.activity_top_left_house a{
+	color: black;
+}
+/*------------婴童活动样式 -----------------*/
+.activity_top_left_kids{
+	background: url(../images/home_silo_banner.jpg) -1280px 0px no-repeat;
+
+}
+.activity_top_left_kids{
+	color: white;
+}
+
+/*---------即将开始样式BEGIN---------*/
+.about_to_begin{
+	width: 100%;
+	position: relative;
+}
+.about_to_begin ul{
+	width: 100%;
+}
+.about_to_begin ul li{
+	float: left;
+	width: 77px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	cursor: pointer;
+	border-left: 1px solid #000;
+}
+.about_to_begin ul li:last-child{
+	border-right: 1px solid #000;
+}
+.about_to_begin_activity img{
+	/*float: left;*/
+	margin-right: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+.about_to_begin_activity_box{
+	position: relative;
+	float: left;
+}
+.about_to_begin_activity_box_mask{
+	width: 322px;
+	height: 90px;
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	display: none;
+}
+.about_to_begin_activity_box_mask span{
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	background: red;
+	color: white;
+	margin-top: 30px;
+}
+.about_to_begin_activity_box:hover .about_to_begin_activity_box_mask{
+	display: block;
+}
+.about_to_begin_activity_box_mask span a{
+	color: white;
+}
+.about_to_begin_activity_box_mask span a:hover{
+	color: white;
+	text-decoration: underline;
+}
