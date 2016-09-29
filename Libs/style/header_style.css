@@ -114,6 +114,9 @@
 	z-index: 1000;
 }
 #header_container .header_menu a{
+	display: inline-block;
+	height: 40px;
+	width: 70px;
 	color: white;
 }
 #header_container .header_menu ul{

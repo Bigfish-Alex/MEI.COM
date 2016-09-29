@@ -46,7 +46,9 @@ $(function(){
 			$('.menu_list').eq(index-1).hide();
 		}
 	});
+
 	$('.menu_list').on('mouseover', function() {
+		console.log('in');
 		$(this).show();
 		/* Act on the event */
 	});
