@@ -84,7 +84,9 @@ $(function(){
 					for(var i=0;i<_data[k].length;i++){
 						// console.log(_data[k][i].price);
 						var goodsListBox=document.createElement('div');
-						var _html="<img src="+_data[k][i].imgSrc+">";
+						var _html="<a href='women_neil_details.html?id="+_data.page1[i].id+"'>";
+						_html+="<img src="+_data[k][i].imgSrc+">";
+						_html+="</a>"
 						_html+="<h5>"+_data[k][i].name;+"</h5>"
 						_html+="</br>"
 						_html+="<div>"+_data[k][i].describe;+"</div>"

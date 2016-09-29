@@ -1,5 +1,14 @@
+
 $(function(){
 	$('#header').load("header.html")
+	
+	// $('img').lazyload({
+	// 	  placeholder : "../images/loading.gif",
+ 	//    effect: "fadeIn",
+ 	//   });
+
+       $("img.lazy").lazyload();
+
 	$(window).scroll(function() {
 		/* Act on the event */
 		var osTop=$(window).scrollTop();

@@ -17,10 +17,10 @@ $(function(){
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         paginationClickable: true,
-        spaceBetween: 1,
+        spaceBetween: 300,
         centeredSlides: true,
         autoplay: 3500,
-        speed:2000,
+        speed:1500,
         autoplayDisableOnInteraction: false
     });
 

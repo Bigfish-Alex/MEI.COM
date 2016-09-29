@@ -6,6 +6,7 @@ $(function(){
 	if( $.cookie('shopingCar') ){
 		var buyGoods=JSON.parse($.cookie('shopingCar'));
 		for(var i=0;i<buyGoods.length;i++){
+			var price=parseFloat(buyGoods[i].Price).toFixed(2);
 			console.log(buyGoods[i].Num);
 				console.log(buyGoods[i].Price);
 				var _html='<tr> <td> <img src="'+
@@ -13,7 +14,7 @@ $(function(){
 				buyGoods[i].BrandName+' </p> <p class="intro"> '+
 				buyGoods[i].Intro+' </p> <p class="size"> 尺寸：'+
 				buyGoods[i].Size+' </p> </td> <td>￥<span class="single_price">'+
-				buyGoods[i].Price.toFixed(2)+'</span></td> <td> <div class="fa fa-minus num_minus"></div> <input type="text" value="'+
+				price+'</span></td> <td> <div class="fa fa-minus num_minus"></div> <input type="text" value="'+
 				buyGoods[i].Num+'" class="buy_num"> <div class="fa fa-plus num_add"></div> </td> <td></td> <td>￥<span class="single_count">1737.00</span></td> <td><span class="fa fa-close remove"></span></td> </tr>';
 				$(_html).appendTo('.table_count table')
 		}

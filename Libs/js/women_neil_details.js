@@ -13,7 +13,7 @@ $(function(){
 		console.log(_data);
 		for(var k in _data){
 			console.log(k)
-			if (k==idCode) {
+			if (k==idCode){
 				console.log(_data[k].name);
 				for(var i=0;i<_data[k].bigImg.length;i++){
 					$('.bigImg').eq(i).attr({

@@ -34,7 +34,7 @@ $(function(){
 			$('.menu_list').eq(index-1).show();
 			$('.menu_list').eq(index-1).css({
 				left: $(this).offset().left,
-				top:$(this).offset().top+40+'px',
+				top:$(this).offset().top+20+'px',
 			});
 		}
 	});

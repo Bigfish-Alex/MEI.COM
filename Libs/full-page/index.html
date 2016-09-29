@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			a{
+				text-decoration: none;
+				color: white;
+				font-family: "微软雅黑";
+				font-weight: bold;
+			}
+			#container{
+				text-align: center;
+			}
+			ul{
+				position: fixed;
+				top: 100px;
+				left: 30px;
+				list-style: none;
+				z-index: 99;
+			}
+			ul li{
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css"/>
+		<script src="jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#container').fullpage({
+					sectionsColor:['#00FFFF','#00FF00','#33FFCC','#00FF00'],
+//					controlArrows:false,
+//					verticalCentered:false,
+//					resize:true;
+//					scrollingSpeed:2000,
+					anchors:['page1','page2','page3','page4'],
+//					loopTop:true,
+//					loopBottom:true,
+//					loopHorizontal:true,
+//					atuoScrolling:true,
+//					paddingTop:'100px',
+//					fixedElement:'#header',
+//					keyboardScrolling:true,
+					navigation:true,
+					navigationPosition:'right',
+					navigationTooltips:['page1','page2','page3','page4'],
+//					$.fn.fullpage.moveTo(3) 方法
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<ul>
+				<li data-menuabchor = "page1"><a href="#page1">PAGE1</a></li>
+				<li data-menuabchor = "page2"><a href="#page2">PAGE2</a></li>
+				<li data-menuabchor = "page3"><a href="#page3">PAGE3</a></li>
+				<li data-menuabchor = "page4"><a href="#page4">PAGE4</a></li>
+			</ul>
+		<div class="section active">
+        	<h3>第一屏</h3>
+	    </div>
+	    <div class="section">
+	        <div class="slide">SLIDE1</div>
+	        <div class="slide">SLIDE2</div>
+	        <div class="slide">SLIDE3</div>
+	        <div class="slide">SLIDE4</div>	        
+	    </div>
+	    <div class="section">
+	        <h3>第三屏</h3>
+	    </div>
+	    <div class="section">
+	        <h3>第四屏</h3>
+	    </div>
+		</div>
+	</body>
+</html>

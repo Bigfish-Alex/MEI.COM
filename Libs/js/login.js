@@ -12,6 +12,12 @@ $(function(){
 
 	});
 
+	// 自动填充账户密码
+	if($.cookie('username')){
+		$('#username').val($.cookie('username'));
+		$('#password').val($.cookie('password'));
+	}
+
 	// 生成随机验证码
 	function createCodeNum(){
 		var randomCode=[];	
@@ -95,8 +101,8 @@ $(function(){
 				if(isAccount){
 					if( $(':checkbox')[0].checked ){
 						alert('登录成功，跳到首页');
-						$.cookie('username',user);
-						$.cookie('password',pwd);
+						$.cookie('username',user,{expires:7});
+						$.cookie('password',pwd,{expires:7});
 						window.location=('index.html');
 					}else{
 						alert('登录成功，跳到首页');

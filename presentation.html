@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>朱志成-魅力惠-展示页面</title>
+		<style type="text/css">
+			*{
+				font-family: "微软雅黑";
+			}
+			#container{
+				text-align: center;
+			}
+			h3{
+				font-size: 30px;
+			}
+			.intro h3{
+				font-size: 70px;
+				font-weight: normal;
+				text-shadow:2px 3px 8px #000;
+			}
+			.intro h4{
+				font-size: 30px;
+				font-weight: normal;
+				text-shadow:2px 3px 8px #000;
+			}
+			.index{
+				width: 100%;
+				height: 100%;
+				background: url(Libs/images/presentation/index.png);
+			}
+			.index a{
+				display: inline-block;
+				position: absolute;
+				top: 20px;
+				right: 30px;
+				z-index: 10;
+				color: black;
+			}
+			.login{
+				width: 100%;
+				height: 100%;
+				background: url(Libs/images/presentation/login.png);
+			}
+			.register{
+				width: 100%;
+				height: 100%;
+				background: url(Libs/images/presentation/register.png);
+			}
+			.list{
+				width: 100%;
+				height: 100%;
+				background: url(Libs/images/presentation/list.png);
+			}
+			.details{
+				width: 100%;
+				height: 100%;
+				background: url(Libs/images/presentation/details.png);
+			}
+			.shoppingCar{
+				width: 100%;
+				height: 100%;
+				background: url(Libs/images/presentation/shoppingCar.png);
+			}
+			.bug{
+				font-size: 30px;
+			}
+			.thanks{
+				font-size: 66px;
+			}
+			.thanks_again{
+				font-size: 30px;
+			}
+		</style>
+	<link rel="stylesheet" type="text/css" href="Libs/full-page/jquery.fullPage.css">
+
+	<script type="text/javascript" src="Libs/full-page/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="Libs/full-page/jquery.fullPage.min.js"></script>
+	
+	<script type="text/javascript">
+		$(function(){
+				$('#container').fullpage({
+					sectionsColor:['#33FFCC','#00FF00','#33FFCC','#33FFCC','#33FFCC','#fff','#fff','#33FFCC',],
+					anchors:['page1','page2','page3','page4','page5','page6','page7','page8'],
+					navigation:true,
+					navigationPosition:'right',
+					navigationTooltips:['项目介绍','各页面截图展示','那些年我们走过的坑','老师坑','自己挖的坑','定位坑','定位坑','THANKS'],
+				});			
+		})
+	</script>
+</head>
+<body>
+		<div id="container">
+			<div class="section">       	
+	        	<div class="intro">
+	        		<h3>魅力惠</h3>	
+	        		<h4>项目展示(朱志成)</h3>
+	        	</div>
+		    </div>
+		    <div class="section">
+		        <div class="slide">
+		        	<div class="index">
+		        		
+		        	</div>
+		        </div>
+		        <div class="slide">
+		        	<div class="register">
+		        		
+		        	</div>
+		        </div>
+		        <div class="slide">
+		        	<div class="login">
+		        		
+		        	</div>
+		        </div>
+		       	<div class="slide">
+		        	<div class="list">
+		        		
+		        	</div>
+		        </div>
+		        <div class="slide">
+		        	<div class="details">
+		        		
+		        	</div>
+		        </div>
+		        <div class="slide">
+		        	<div class="shoppingCar">
+		        		
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="section">
+		        <h3 class="bug">那些年我们走过的坑</h3>
+		    </div>
+		    <div class="section">
+		        <h3>FIRST:"老师坑"(改需求)</h3>
+		    </div>
+		    <div class="section">
+		        <h3>SECOND:自己挖坑自己JUMP</h3>
+		    </div>
+		    <div class="section">
+		        <img src="Libs/images/presentation/float_content1.png" height="638" width="1260" alt="">
+		    </div>
+		    <div class="section">
+		        <img src="Libs/images/presentation/float_content2.png" height="756" width="1255" alt="">
+		    </div>
+		    <div class="section">
+		        <h3 class="thanks">THANKS</h3>
+		        <h5 class="thanks_again">最后送大家一个66PX的谢谢</h5>
+		    </div>
+		</div>	
+</body>
+</html>
