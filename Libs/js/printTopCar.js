@@ -6,7 +6,7 @@ function printTopCar(){
 		$('.buy_bum').html(buy_num);
 
 		function countFinal(){
-			console.log(buyGoods);
+			// console.log(buyGoods);
 			var total=0;
 			$('.shoppingcar_list').empty();
 			for(var i=0;i<buyGoods.length;i++){
@@ -20,6 +20,7 @@ function printTopCar(){
 				buyGoods[i].Num+'</span>  x  ￥ <span class="singlePrice">'+
 				buyGoods[i].Price+'</span> <span class="delete"> 删除 </span> </div> ';
 				$('.shoppingcar_list').append(_html);
+				
 			}
 			$('.total').html(total.toFixed(2));
 		}

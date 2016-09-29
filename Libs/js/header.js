@@ -55,12 +55,8 @@ $(function(){
 		/* Act on the event */
 	});
 	
-	//**************购物袋********************
-	//	console.log($('.header_menu').offset().top)
-
-	//调用打印头部购物车数据的函数
-	printTopCar();
 	
+
 	
 	//显示我的账户
 	if( $.cookie('username') ){
@@ -99,5 +95,9 @@ $(function(){
 		}
 	})
 	
+//**************购物袋********************
+	//	console.log($('.header_menu').offset().top)	
+	//调用打印头部购物车数据的函数
+	printTopCar();
 	
 })

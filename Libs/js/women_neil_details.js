@@ -2,6 +2,40 @@ $(function(){
 	$('#header').load('header.html');
 	$('#footer').load('footer.html');
 
+	var goodsId=window.location.search;
+	goodsId=goodsId.split('=');
+	goodsId=goodsId[1];
+	var idCode={};
+	idCode="id"+goodsId;
+	console.log(idCode);
+	
+	$.get('../../goodsData/neil_datails.json',function(_data){
+		console.log(_data);
+		for(var k in _data){
+			console.log(k)
+			if (k==idCode) {
+				console.log(_data[k].name);
+				for(var i=0;i<_data[k].bigImg.length;i++){
+					$('.bigImg').eq(i).attr({
+						src: _data[k].bigImg[i],
+					});	
+					$('.smallImg').eq(i).attr({
+						src: _data[k].smallImg[i],
+					});
+				}
+				$('.goods_name h3').html( _data[k].name);
+				$('.goodsIntro').html(_data[k].describe);
+				$('.nowPrice').html(_data[k].price);
+				$('.oldPrice').html(_data[k].oldPrice);
+				$('.color_choice_img').attr({
+					src: _data[k].smallImg[1],
+				});
+				$('.color_pic span').html(_data[k].color)
+			};	
+		}
+	})
+
+
 	// 主图的切换功能
 	$('.bigImg').hide().eq(0).show();
 
@@ -104,11 +138,11 @@ $(function(){
 				var goodsInfo={};
 				goodsInfo.ID=1001;
 				goodsInfo.Size=size;
-				goodsInfo.Price=5676.00;
+				goodsInfo.Price=$('.nowPrice').html();
 				goodsInfo.Num=num;
-				goodsInfo.ImgSrc="Libs/images/women_neil_details/black.jpg";
-				goodsInfo.BrandName="NEIL BARRETT";
-				goodsInfo.Intro="黑色平驳领双排扣裙摆大衣";
+				goodsInfo.ImgSrc=$('.smallImg').attr('src');
+				goodsInfo.BrandName=$('.goods_name h3').html();
+				goodsInfo.Intro=$('.goodsIntro').html();
 				goodsList.push(goodsInfo);
 				var goodsListJson=JSON.stringify(goodsList);
 				// console.log(goodsListJson);
@@ -118,11 +152,11 @@ $(function(){
 					var goodsInfo={};
 					goodsInfo.ID=1001;
 					goodsInfo.Size=size;
-					goodsInfo.Price=5676.00;
+					goodsInfo.Price=$('.nowPrice').html();
 					goodsInfo.Num=num;
-					goodsInfo.ImgSrc="Libs/images/women_neil_details/black.jpg";
-					goodsInfo.BrandName="NEIL BARRETT";
-					goodsInfo.Intro="黑色平驳领双排扣裙摆大衣";
+					goodsInfo.ImgSrc=$('.smallImg').attr('src');
+					goodsInfo.BrandName=$('.goods_name h3').html();
+					goodsInfo.Intro=$('.goodsIntro').html();
 					var goodsList=JSON.parse($.cookie('shopingCar')) ;
 					goodsList.push(goodsInfo);
 					var goodsListJson=JSON.stringify(goodsList);

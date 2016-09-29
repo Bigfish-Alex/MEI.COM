@@ -17,11 +17,12 @@ $(function(){
 	});
 
 	// 获取商品的列表信息
-	$.get('../../goodsData/goods_neil.json',function(_data){
+	$.get('goodsData/goods_neil.json',function(_data){
 
 		for(var i=0;i<_data.page1.length;i++){
+			console.log(_data.page1[i].id);
 			var goodsListBox=document.createElement('div');
-			var _html="<a href="+"women_neil_details.html"+">"
+			var _html="<a href='women_neil_details.html?id="+_data.page1[i].id+"'>"
 			_html+="<img src="+_data.page1[i].imgSrc+">";
 			_html+="</a>"
 			_html+="<h5>"+_data.page1[i].name;+"</h5>"
