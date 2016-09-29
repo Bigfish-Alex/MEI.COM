@@ -9,7 +9,7 @@ $(function(){
 	idCode="id"+goodsId;
 	console.log(idCode);
 	
-	$.get('../../goodsData/neil_datails.json',function(_data){
+	$.get('goodsData/neil_datails.json',function(_data){
 		console.log(_data);
 		for(var k in _data){
 			console.log(k)
