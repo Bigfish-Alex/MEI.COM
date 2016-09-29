@@ -15,6 +15,8 @@ $(function(){
 			console.log(k)
 			if (k==idCode){
 				console.log(_data[k].name);
+				$('.brand_name').html(_data[k].name)
+				$('.little_nav').html(_data[k].describe);
 				for(var i=0;i<_data[k].bigImg.length;i++){
 					$('.bigImg').eq(i).attr({
 						src: _data[k].bigImg[i],
