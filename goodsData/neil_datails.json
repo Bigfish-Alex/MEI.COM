@@ -1,0 +1,42 @@
+{
+	"id1002":{
+		"bigImg":[
+			"Libs/images/women_neil_details/id1002/1002b1.jpg",
+			"Libs/images/women_neil_details/id1002/1002b2.jpg",
+			"Libs/images/women_neil_details/id1002/1002b3.jpg",
+			"Libs/images/women_neil_details/id1002/1002b4.jpg"
+		],
+		"smallImg":[
+			"Libs/images/women_neil_details/id1002/1002s1.jpg",
+			"Libs/images/women_neil_details/id1002/1002s2.jpg",
+			"Libs/images/women_neil_details/id1002/1002s3.jpg",
+			"Libs/images/women_neil_details/id1002/1002s4.jpg"
+		],
+		"price":710,
+		"oldPrice":1140,
+		"describe":"米白色印花深V领长袖收腰上衣",
+		"name":"FREE PEOPLE",
+		"color":"米白色",
+		"id":1002
+	},
+	"id1003":{
+		"bigImg":[
+			"Libs/images/women_neil_details/id1003/1003b1.jpg",
+			"Libs/images/women_neil_details/id1003/1003b2.jpg",
+			"Libs/images/women_neil_details/id1003/1003b3.jpg",
+			"Libs/images/women_neil_details/id1003/1003b4.jpg"
+		],
+		"smallImg":[
+			"Libs/images/women_neil_details/id1003/1003s1.jpg",
+			"Libs/images/women_neil_details/id1003/1003s2.jpg",
+			"Libs/images/women_neil_details/id1003/1003s3.jpg",
+			"Libs/images/women_neil_details/id1003/1003s4.jpg"
+		],
+		"price":610,
+		"oldPrice":1224,
+		"describe":"米粉色印花刺绣喇叭袖高领上衣",
+		"name":"FREE PEOPLE",
+		"color":"米粉色",
+		"id":1003
+	}
+}

@@ -16,11 +16,9 @@ $(function(){
 		}
 	});
 
-	// 获取商品的列表信息
-	$.get('goodsData/goods_neil.json',function(_data){
-
+	//打印页面函数
+	function printPage(_data){
 		for(var i=0;i<_data.page1.length;i++){
-			console.log(_data.page1[i].id);
 			var goodsListBox=document.createElement('div');
 			var _html="<a href='women_neil_details.html?id="+_data.page1[i].id+"'>"
 			_html+="<img src="+_data.page1[i].imgSrc+">";
@@ -33,7 +31,12 @@ $(function(){
 			$(goodsListBox).append(_html);
 			$(goodsListBox).addClass('goods_list_box');
 			$('.goods_list').append(goodsListBox);
-		}
+		}	
+	}
+		
+	// 获取商品的列表信息
+	$.get('goodsData/goods_neil.json',function(_data){
+		printPage(_data);
 		// 计算一共有多少页 l为页数
         var l=0;
 		for(var n in _data){
@@ -100,6 +103,25 @@ $(function(){
 			}
 		}	
 		// 翻页功能over
+		
+		// 排序
+		$('.price_sort').click(function(){
+			console.log('price_sort');
+			$.get('goodsData/goods_neil.json',function(_data){
+				console.log(_data.page1.length);
+				for(var i=0;i<_data.page1.length;i++){
+					for(var j=0;j<_data.page1.length-i-1;j++){
+						if ( parseInt(_data.page1[j].price) > parseInt(_data.page1[j+1].price)) {
+							var temp=_data.page1[j];
+							_data.page1[j]=_data.page1[j+1];
+							_data.page1[j+1]=temp;
+						};
+					}
+				}
+				$('.goods_list').empty();
+				printPage(_data);	
+			})
+		})
 	})
 	// 获取商品的列表信息结束over
 })
